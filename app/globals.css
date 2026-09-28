@@ -10,20 +10,13 @@ html, body, #__next{
 }
 
 body {
-  color: #00ff00;
   letter-spacing: .7px;
   line-height: 1.5;
   font-size: 14px;
   font-family: monospace;
-  background: #000;
 }
 
 a {
-  color: #00ff00;
   text-decoration: none;
   transition: color .5s ease;
-}
-
-a:hover {
-  color: #F04F52;
 }

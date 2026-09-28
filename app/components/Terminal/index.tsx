@@ -1,3 +1,5 @@
+'use client'; 
+
 import {Keyframes, Frame} from './react-keyframes'
 import styles from './terminal.module.css'
 import {useState} from 'react'
@@ -5,7 +7,11 @@ import {useState} from 'react'
 const sleepDuration = 500
 const getTypingDuration = () => 80 + (80 * (Math.random() - 0.5))
 
-const Line = ({text, noPrompt = false, noCaret = false}) => (
+const Line = ({text, noPrompt = false, noCaret = false}: {
+  text: string
+  noPrompt?: boolean
+  noCaret?: boolean
+}) => (
   <>
     {!noPrompt && <span>~ </span>}
     {text}
