@@ -1,6 +1,0 @@
-.next
-.vercel
-node_modules
-public/sw.*
-public/workbox-*
-tests/coverage

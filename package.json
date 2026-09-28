@@ -1,57 +1,26 @@
 {
+  "name": "ksde.pw",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
-    "lint": "tsc && eslint .",
-    "pre-push": "npm run lint && npm test",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "lint": "eslint"
   },
   "dependencies": {
-    "next": "9.5.2",
-    "next-ga": "2.3.4",
-    "next-pwa": "3.1.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "styled-components": "5.1.1"
+    "@next/third-parties": "^16.3.6",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@babel/core": "7.11.4",
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "@storybook/addon-actions": "6.0.16",
-    "@storybook/addon-info": "5.3.19",
-    "@storybook/addon-knobs": "6.0.16",
-    "@storybook/addon-links": "6.0.16",
-    "@storybook/addons": "6.0.16",
-    "@storybook/react": "6.0.16",
-    "@testing-library/react": "10.4.9",
-    "@types/jest": "26.0.10",
-    "@types/node": "14.6.0",
-    "@types/react": "16.9.46",
-    "@typescript-eslint/eslint-plugin": "3.10.0",
-    "@typescript-eslint/parser": "3.10.0",
-    "babel-loader": "8.1.0",
-    "babel-plugin-styled-components": "1.11.1",
-    "eslint": "7.7.0",
-    "eslint-config-xo": "0.32.1",
-    "eslint-config-xo-react": "0.23.0",
-    "eslint-config-xo-typescript": "0.32.0",
-    "eslint-plugin-react": "7.20.6",
-    "eslint-plugin-react-hooks": "4.1.0",
-    "eslint-plugin-unicorn": "21.0.0",
-    "husky": "4.2.5",
-    "jest": "26.4.2",
-    "jest-styled-components": "7.0.3",
-    "typescript": "4.0.2"
-  },
-  "private": true,
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run pre-push"
-    }
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "typescript": "^5"
   }
 }
